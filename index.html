@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Konversio</h1>
+            <p>Selamat datang di Website Konversio. Dengan menggunakan Konversio, Anda bisa melakukan konversi suhu dari Celsius ke Fahrenheit maupun sebaliknya.</p>
+        </header>
+        <main>
+            <div class="input-output">
+                <div class="input-container">
+                    <select name="T" id="input-option">
+                        <option value="Celsius">Celsius (&deg;C)</option>
+                        <option value="Fahrenheit">Fahrenheit (&deg;F)</option>
+                    </select><br>
+                    <input type="number" class="value" id="input" value="0">
+                </div>
+                <div class="icon-container"><i data-feather="arrow-right" class="icon"></i></div>
+                <div class="output-container">
+                    <select name="T" id="output-option">
+                        <option value="Fahrenheit">Fahrenheit (&deg;F)</option>
+                        <option value="Celsius">Celsius (&deg;C)</option>
+                    </select><br>
+                    <input type="number" class="value" id="output" value="32">
+                </div>
+            </div>
+            <div class="button" id="button">
+                <button type="button" class="btn" id="result">Konversi</button>
+                <button type="button" class="btn" id="reset">Reset</button>
+            </div>
+            <div class="formula" id="formula">
+                <h2>Formula</h2>
+                <p id="howto">(0 &deg;C &times; 9/5) + 32 = 32 &deg;F</p>
+            </div>
+            <div class="explaination">
+                <h2>Penjelasan Rumus</h2>
+                <p>Suhu (S) dalam derajat Fahrenheit (&deg;F) sama dengan suhu S dalam derajat Celsius (&deg;C) kali 9/5 tambah 32.
+                <p>S<sub>(&deg;C)</sub> = (S<sub>(&deg;F)</sub> &times; 9/5) + 32</p>
+                <p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> &minus; 32) &times; 5/9 </p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Feather Icons -->
+    <script>
+        feather.replace()
+    </script>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
